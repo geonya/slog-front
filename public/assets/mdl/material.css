@@ -7408,7 +7408,8 @@ input.mdl-button[type="submit"] {
   line-height: 1;
   letter-spacing: 0.02em;
   font-weight: 400;
-  box-sizing: border-box; }
+  box-sizing: border-box; 
+}
 
 .mdl-layout-spacer {
   -webkit-flex-grow: 1;

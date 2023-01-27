@@ -1,10 +1,31 @@
+<script>
+  import { router, meta } from "tinro";
+  const route = meta();
+  const url = route.url;
+  const goHome = () => {
+    router.goto("/");
+  };
+</script>
+
 <!-- start header -->
 <header class="mdl-layout__header mdl-layout__header--waterfall">
   <div class="mdl-layout__header-row">
-    <span class="mdl-layout-title">SLogs</span>
+    <span
+      class="mdl-layout-title logo"
+      on:click={goHome}
+      on:keypress={() => true}>SLogs</span
+    >
     <nav class="mdl-navigation">
-      <a class="mdl-navigation__link selected" href="#null">로그인</a>
-      <a class="mdl-navigation__link " href="#null">회원가입</a>
+      <a
+        class="mdl-navigation__link"
+        class:selected={url === "/login"}
+        href="/login">로그인</a
+      >
+      <a
+        class="mdl-navigation__link"
+        class:selected={url === "/register"}
+        href="/register">회원가입</a
+      >
     </nav>
     <i class="bx bxs-home" />
   </div>
