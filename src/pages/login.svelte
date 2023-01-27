@@ -1,6 +1,6 @@
 <script>
   import AuthHeader from "../components/auth-header.svelte";
-  import AuthRegister from "../components/auth-register.svelte";
+  import AuthLogin from "../components/auth-login.svelte";
 </script>
 
 <!-- start auth -->
@@ -8,6 +8,6 @@
   class="auth mdl-color--grey-100 mdl-layout mdl-js-layout mdl-layout--fixed-header"
 >
   <AuthHeader />
-  <AuthRegister />
+  <AuthLogin />
 </div>
 <!-- end auth -->
